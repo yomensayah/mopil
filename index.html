@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>mobile store</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/88ae24261e.js" crossorigin="anonymous"></script>
+  
+    <link rel="icon" href="images/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="d1">
+    <header>
+      <div class="nav-bar">
+          <div class="toggle">☰ Menu</div>
+          <div class="menu">
+              <a href="#about">عن الموقع</a>
+              <a href="#productsSection">شراء جهاز</a>
+              <a href="#sellerInfo">بيع جهاز</a>
+              <a href="#footer">معلومات الاتصال</a>
+              <a href="register.html">register now</a>
+          </div>
+      </div>
+  </header>
+  <script>
+    document.querySelector('.toggle').addEventListener('click', function() {
+        document.querySelector('.menu').classList.toggle('show');
+    });
+</script>
+
+    
+            
+           </div>
+    </form>
+    <div class="content">
+      <div class="home">
+          <form class="form" onsubmit="performSearch(event)">
+              <input type="text" id="searchInput" placeholder="ابحث عن منتج..." class="search-input">
+              <button type="submit">بحث</button>
+              <div id="results"></div>
+          </form>
+    
+        </div>
+    </div>
+  </div>
+
+  <div id="productsSection" class="productsSection">
+    <h2>الاجهزة للبيع</h2>
+    <section>
+      <div class="container">
+          <div id="product-list" class="product-list">
+              <!-- بطاقات المنتجات ستظهر هنا -->
+          </div>
+      </div>
+  </section>
+    <div id="productsList" class="productsList"></div>
+</div>    <h2>إضافة اجهزة للبيع</h2>
+<div id="sellerInfo" class="product_container"></div>
+    
+<form id="productForm" class="product">
+    <label for="productName" class="label">اسم المنتج:</label>
+    <input type="text" id="productName" required>
+    
+    <label for="productPrice" class="label">سعر المنتج:</label>
+    <input type="number" id="productPrice" required>
+    <label for="productdecrition" class="label">وصف المنتج</label>
+    <input type="text" id="DescribtionProduct"  required>
+    <label for="phonestatue" class="label">حالة لجهاز</label>
+    <input type="text" id="phonestatue"  required>
+    
+    <label for="productImage" class="label">صورة المنتج:</label>
+    <input type="file" id="productImage" accept="image/*" required>
+    
+    <button type="submit">إضافة المنتج</button>
+</form>
+
+
+<section class="hero_section" id="about">
+    <div class="section_container">
+      <div class="hero_container">
+        <div class="text_section">
+          <h2>أهلا بك في متجر الاجهزة الالكتروني</h2>
+          <h3 >هذا المتجر يساعدك على بيع الجهاز او شراء</h3>
+          <p>
+          سجل دخولك واذهب الى جزء بيع الجهاز وقم بوضع سعر ووصف الجهاز وصورته وسيتواصل معك من يريد شراءه
+          </p>
+        </div>
+        <div class="image_section">
+          <img src="img/logo.webp" alt="phone"  width="300px" height="2``00px"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div id="commentsSection" class="commentsSection">
+        <h2>التعليقات</h2>
+        <div id="commentsList" class="commentsList"></div>
+    </div>
+    <form id="commentForm">
+        <label for="comment">التعليق:</label>
+        <textarea id="comment" required></textarea>
+        
+        <button type="submit">إضافة تعليق</button>
+    </form>
+
+    <footer id="footer">
+        <div class="section_container">
+          <div class="footer_section">
+            <div class="footer_logo">
+              <a href="index.html">
+                <img src="img/logo1.jpeg" alt="phone logo" />
+                <h2>logo</h2>
+              </a>
+            </div>
+  
+            <div class="useful_links">
+              <h3>روابط الصفحة</h3>
+              <ul>
+                <li><a href="#about">عن الموقع</a></li>
+                <li><a href="#productsSection">شراء جهاز</a></li>
+                <li><a href="#sellerInfo">بيع جهاز</a></li>
+                <li><a href="#contact">تواصل</a></li>
+                <li><a href="#commentsSection">تعليقات</a></li>
+              </ul>
+            </div>
+  
+          
+  
+            <div class="follow_us">
+              <h3>متابعة صفحاتنا</h3>
+              <ul>
+             <li><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i><a href="http://">feacebook</a></li>
+             <li><i class="fa-brands fa-twitter" style="color: #ffffff;"></i><a href="http://">twitter</a></li>
+             <li><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i><a href="http://">linkedin</a></li>
+             <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i><a href="http://">instagram</a>
+             </li></ul>
+            </div>
+            <div class="list1">
+
+              <h3 style="color: white;">Address</h3>
+              <ul style="list-style-type: none; padding: 5px;" >
+                <li>
+                  <i class="fa-solid fa-location-dot" style="color: #fcfcfc;"></i>Location
+                </li>
+                <li><i class="fa-solid fa-phone" style="color: #fcfcfc;"></i>Call +01 1234567890</li>
+                <li><i class="fa-solid fa-envelope" style="color: #fafafa;"></i> phone@gmail.com</li>
+               
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+

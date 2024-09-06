@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج</title>
+    <style>
+        /* نفس الـ CSS الموجود لديك */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #a8a6a6;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        h1, h3 {
+            color: #333;
+        }
+        .details-link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .details-link:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 50%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #007bff;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .review {
+           display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px;
+            background:#86a8cd;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .review h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .review p {
+            margin: 10px 0;
+        }
+        .review button {
+            background-color: #86a8cd;
+        }
+        .review button:hover {
+            background-color: #c82333;
+        }
+.b1{
+    background-color: #86a8cd;
+    /* display: flex; */
+    width: 200px;
+    margin: 30px;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: #161616;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="productName">devicename</h1>
+        <img id="productImage" src="" alt="صورة المنتج">
+        <p id="productPrice">price </p>
+        <p id="productDescription">desrcaption</p>
+        <p id="productStatue"> devicestus </p>
+        
+        <!-- روابط التواصل (يمكن تعديلها حسب الحاجة) -->
+        <div id="contactLinks">
+           <button class="b1"><a id="whatsappLink" href="#" target="_blank">تواصل عبر WhatsApp</a></button>
+           <button class="b1"> <a id="emailLink" href="#">أرسل بريدًا إلكترونيًا</a></button>
+        </div>
+        <h3>تقييم البائعين </h3>
+
+        <div id="reviewsList">
+        </div>
+        
+
+        <h3>إضافة تعليق</h3>
+        <form id="commentForm">
+            <div class="form-group">
+                <label for="comment">التعليق:</label>
+                <textarea id="comment" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">إرسال التعليق</button>
+            </div>
+        </form>
+
+        <h3>نموذج الاتصال</h3>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">الرسالة:</label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">إرسال الرسالة</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="product-details.js"></script>
+</body>
+</html>
